@@ -66,6 +66,15 @@
         },
         "brand": {
           "type": "string"
+        },
+        "resources": {
+          "type": "string"
+        },
+        "features": {
+          "type": "string"
+        },
+        "other": {
+          "type": "string"
         }
       },
       "additionalProperties": false
@@ -131,6 +140,12 @@
           "type": "string"
         },
         "open_diff": {
+          "type": "string"
+        },
+        "open_timeline": {
+          "type": "string"
+        },
+        "open_stats": {
           "type": "string"
         }
       },
@@ -453,6 +468,12 @@
             },
             "download": {
               "type": "string"
+            },
+            "changelog": {
+              "type": "string"
+            },
+            "stats": {
+              "type": "string"
             }
           },
           "additionalProperties": false
@@ -676,6 +697,81 @@
       },
       "additionalProperties": false
     },
+    "noodles": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "meta_description": {
+          "type": "string"
+        },
+        "latest": {
+          "type": "string"
+        },
+        "what_is": {
+          "type": "string"
+        },
+        "what_is_body": {
+          "type": "string"
+        },
+        "empty": {
+          "type": "string"
+        },
+        "load_more": {
+          "type": "string"
+        },
+        "dates": {
+          "type": "string"
+        },
+        "shipped_in": {
+          "type": "string"
+        },
+        "credits": {
+          "type": "string"
+        },
+        "learn_more": {
+          "type": "string"
+        },
+        "carousel_prev": {
+          "type": "string"
+        },
+        "carousel_next": {
+          "type": "string"
+        },
+        "carousel_dots": {
+          "type": "string"
+        },
+        "carousel_jump": {
+          "type": "string"
+        },
+        "lens_label": {
+          "type": "string"
+        },
+        "lens_slide": {
+          "type": "string"
+        },
+        "lens_slide_position": {
+          "type": "string"
+        },
+        "back_to_archive": {
+          "type": "string"
+        },
+        "missing": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
     "settings": {
       "type": "object",
       "properties": {
@@ -846,6 +942,15 @@
         },
         "keyboard_shortcuts_enabled_description": {
           "type": "string"
+        },
+        "enable_code_ligatures": {
+          "type": "string"
+        },
+        "enable_changelog_autoscroll": {
+          "type": "string"
+        },
+        "enable_changelog_autoscroll_description": {
+          "type": "string"
         }
       },
       "additionalProperties": false
@@ -938,6 +1043,9 @@
           "type": "string"
         },
         "per_week": {
+          "type": "string"
+        },
+        "per_week_short": {
           "type": "string"
         },
         "vanity_downloads_hint": {
@@ -1141,13 +1249,40 @@
           },
           "additionalProperties": false
         },
+        "size_decrease": {
+          "type": "object",
+          "properties": {
+            "title_size": {
+              "type": "string"
+            },
+            "title_deps": {
+              "type": "string"
+            },
+            "title_both": {
+              "type": "string"
+            },
+            "size": {
+              "type": "string"
+            },
+            "deps": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
         "replacement": {
           "type": "object",
           "properties": {
             "title": {
               "type": "string"
             },
+            "example": {
+              "type": "string"
+            },
             "native": {
+              "type": "string"
+            },
+            "native_no_version": {
               "type": "string"
             },
             "simple": {
@@ -1163,12 +1298,6 @@
               "type": "string"
             },
             "learn_more_above": {
-              "type": "string"
-            },
-            "mdn": {
-              "type": "string"
-            },
-            "community": {
               "type": "string"
             },
             "consider_no_dep": {
@@ -1215,6 +1344,15 @@
                 }
               },
               "additionalProperties": false
+            },
+            "main_information": {
+              "type": "string"
+            },
+            "trends": {
+              "type": "string"
+            },
+            "version_distribution": {
+              "type": "string"
             }
           },
           "additionalProperties": false
@@ -1303,7 +1441,16 @@
             "compare": {
               "type": "string"
             },
+            "timeline": {
+              "type": "string"
+            },
+            "stats": {
+              "type": "string"
+            },
             "compare_this_package": {
+              "type": "string"
+            },
+            "changelog": {
               "type": "string"
             }
           },
@@ -1316,6 +1463,15 @@
               "type": "string"
             },
             "unlike": {
+              "type": "string"
+            },
+            "top_rank_tooltip": {
+              "type": "string"
+            },
+            "top_rank_label": {
+              "type": "string"
+            },
+            "top_rank_link_label": {
               "type": "string"
             }
           },
@@ -1440,6 +1596,9 @@
             },
             "copy_as_markdown": {
               "type": "string"
+            },
+            "error_loading": {
+              "type": "string"
             }
           },
           "additionalProperties": false
@@ -1531,6 +1690,9 @@
             "license": {
               "type": "string"
             },
+            "version": {
+              "type": "string"
+            },
             "select": {
               "type": "string"
             },
@@ -1583,9 +1745,6 @@
               "type": "string"
             },
             "distribution_title": {
-              "type": "string"
-            },
-            "distribution_modal_title": {
               "type": "string"
             },
             "distribution_range_date_same_year": {
@@ -1648,6 +1807,15 @@
             "filter_tooltip_link": {
               "type": "string"
             },
+            "license_change_help": {
+              "type": "string"
+            },
+            "license_change_warning": {
+              "type": "string"
+            },
+            "license_change_record": {
+              "type": "string"
+            },
             "no_matches": {
               "type": "string"
             },
@@ -1671,6 +1839,93 @@
             },
             "no_match_filter": {
               "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "timeline": {
+          "type": "object",
+          "properties": {
+            "load_more": {
+              "type": "string"
+            },
+            "load_error": {
+              "type": "string"
+            },
+            "size_increase": {
+              "type": "string"
+            },
+            "size_decrease": {
+              "type": "string"
+            },
+            "dep_increase": {
+              "type": "string"
+            },
+            "dep_decrease": {
+              "type": "string"
+            },
+            "license_change": {
+              "type": "string"
+            },
+            "esm_added": {
+              "type": "string"
+            },
+            "esm_removed": {
+              "type": "string"
+            },
+            "types_added": {
+              "type": "string"
+            },
+            "types_removed": {
+              "type": "string"
+            },
+            "trusted_publisher_added": {
+              "type": "string"
+            },
+            "trusted_publisher_removed": {
+              "type": "string"
+            },
+            "provenance_added": {
+              "type": "string"
+            },
+            "provenance_removed": {
+              "type": "string"
+            },
+            "chart": {
+              "type": "object",
+              "properties": {
+                "tab_aria_label": {
+                  "type": "string"
+                },
+                "base_scale": {
+                  "type": "string"
+                },
+                "zoom": {
+                  "type": "string"
+                },
+                "reset_minimap": {
+                  "type": "string"
+                },
+                "ordered_versions": {
+                  "type": "string"
+                },
+                "copy_alt": {
+                  "type": "object",
+                  "properties": {
+                    "key_changes": {
+                      "type": "string"
+                    },
+                    "version_events": {
+                      "type": "string"
+                    },
+                    "general_description": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "additionalProperties": false
             }
           },
           "additionalProperties": false
@@ -1977,6 +2232,24 @@
                 }
               },
               "additionalProperties": false
+            },
+            "embedding": {
+              "type": "object",
+              "properties": {
+                "chart": {
+                  "type": "string"
+                },
+                "copy_url": {
+                  "type": "string"
+                },
+                "preview": {
+                  "type": "string"
+                },
+                "tip": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
             }
           },
           "additionalProperties": false
@@ -1985,6 +2258,9 @@
           "type": "object",
           "properties": {
             "title": {
+              "type": "string"
+            },
+            "version_distribution_title": {
               "type": "string"
             },
             "community_distribution": {
@@ -2273,6 +2549,36 @@
               "type": "string"
             },
             "tarball": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "leaderboard": {
+      "type": "object",
+      "properties": {
+        "likes": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "rank": {
+              "type": "string"
+            },
+            "likes": {
+              "type": "string"
+            },
+            "unavailable_title": {
+              "type": "string"
+            },
+            "unavailable_description": {
               "type": "string"
             }
           },
@@ -3361,7 +3667,13 @@
             "title": {
               "type": "string"
             },
-            "governance": {
+            "core": {
+              "type": "string"
+            },
+            "maintainers": {
+              "type": "string"
+            },
+            "role_core": {
               "type": "string"
             },
             "role_steward": {
@@ -3981,6 +4293,42 @@
                     }
                   },
                   "additionalProperties": false
+                },
+                "githubStars": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "githubIssues": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "createdAt": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
                 }
               },
               "additionalProperties": false
@@ -4037,12 +4385,6 @@
           "type": "string"
         },
         "lines_hidden": {
-          "type": "string"
-        },
-        "file_too_large": {
-          "type": "string"
-        },
-        "file_size_warning": {
           "type": "string"
         },
         "compare_versions": {
@@ -4163,6 +4505,15 @@
           "type": "string"
         },
         "diff_distance": {
+          "type": "string"
+        },
+        "diff_truncated": {
+          "type": "string"
+        },
+        "large_diff_mode": {
+          "type": "string"
+        },
+        "large_diff_options_disabled": {
           "type": "string"
         },
         "loading_diff": {
@@ -4947,6 +5298,39 @@
     },
     "alt_logo_kawaii": {
       "type": "string"
+    },
+    "changelog": {
+      "type": "object",
+      "properties": {
+        "pre_release": {
+          "type": "string"
+        },
+        "draft": {
+          "type": "string"
+        },
+        "no_logs": {
+          "type": "string"
+        },
+        "error": {
+          "type": "object",
+          "properties": {
+            "p1": {
+              "type": "string"
+            },
+            "p2": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "rate_limit_ungh": {
+          "type": "string"
+        },
+        "version_unavailable": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
     },
     "$schema": {
       "type": "string"
